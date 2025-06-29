@@ -3,28 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zuhaib Khan | Portfolio</title>
+  <title>Zuhaib Khan | Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Hi, I'm Zuhaib Khan</h1>
-    <p>Python Full Stack Developer</p>
+  <div class="main-container">
+    <!-- HEADER / HERO SECTION -->
+    <header class="hero">
+      <img src="assets/zuhaib.jpg" alt="Zuhaib Khan" class="profile-pic">
+      <h1>Hi, I'm <span class="highlight">Zuhaib Khan</span></h1>
+      <p class="subtitle">Python Full Stack Developer | ML Enthusiast | Problem Solver</p>
+      <a href="assets/resume.pdf" download class="btn">📄 Download Resume</a>
+    </header>
 
-    <img src="assets/zuhaib.jpg" alt="Zuhaib Khan" style="width: 120px; border-radius: 50%; margin: 20px 0;">
+    <!-- ABOUT ME -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I am a passionate and detail-oriented <strong>Python Full Stack Developer</strong> from New Delhi, India. I recently completed my <strong>B.Tech in Computer Science</strong> from <strong>Gurugram University (2021–2025)</strong>. During my college years, I developed a strong foundation in software development, web technologies, and machine learning. I have worked on real-world projects that have helped me understand the software development life cycle end-to-end.
+      <br><br>
+      I have a strong command over technologies such as <strong>Flask, MongoDB, React, HTML, CSS, and JavaScript</strong>. I also have experience in data science tools like <strong>Pandas, NumPy, and scikit-learn</strong>. My strengths include developing intuitive user interfaces, building secure and scalable backends, and writing clean and maintainable code.
+      <br><br>
+      In addition to coding, I possess strong communication skills and a collaborative mindset. I enjoy working in teams, learning new tools, and contributing to open-source. My goal is to create impactful digital solutions that address real-life problems.
+      <br><br>
+      I’m driven by curiosity, continuous improvement, and a deep passion for building applications that make life easier and smarter. Whether it’s automating banking systems or assisting farmers with smart tools, I always aim to make technology accessible and useful.
+      </p>
+    </section>
 
-    <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
+    <!-- SKILLS -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skill-tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Python</span>
+        <span>Flask</span><span>MongoDB</span><span>Git</span><span>GitHub</span>
+        <span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>VS Code</span>
+      </div>
+    </section>
 
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Crop Disease Prediction:</strong> <a href="https://github.com/Zuhaibkhank/Crop_Disease_Prediction">View on GitHub</a></li>
-      <li><strong>Banking Automation:</strong> <a href="https://github.com/Zuhaibkhank/Banking_Automation_System">View on GitHub</a></li>
-    </ul>
+    <!-- PROJECTS -->
+    <section class="projects">
+      <h2>Projects</h2>
 
-    <h2>Contact</h2>
-    <p>Email: zuhaibkhan1915691@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/zuhaibkhan1915">linkedin.com/in/zuhaibkhan1915</a></p>
+      <div class="project">
+        <h3>🌾 Crop Disease Detection System</h3>
+        <p>This project is a machine learning-powered web application that allows farmers to detect diseases in crops based on parameters like temperature, humidity, soil moisture, and nutrient content (NPK). The system uses a <strong>Random Forest Classifier</strong> trained on real-world agricultural datasets to predict crop health.
+        <br><br>
+        The interface is built using <strong>Flask</strong> and features a user-friendly form for input. The app processes the data, runs predictions, and returns the most likely disease (or "Healthy" if none). It helps farmers take timely decisions, reduce losses, and increase productivity.
+        <br><br>
+        <strong>Tech Stack:</strong> Python, Flask, Pandas, NumPy, scikit-learn, HTML, CSS
+        </p>
+        <a href="https://github.com/Zuhaibkhank/Crop_Disease_Prediction" target="_blank">🔗 View GitHub Repo</a>
+      </div>
+
+      <div class="project">
+        <h3>🏦 Banking Automation System</h3>
+        <p>This is a full-stack web application that simulates basic banking operations. Users can create accounts, log in securely, deposit and withdraw funds, and check their balance. Built using <strong>Flask and MongoDB</strong>, it includes features like authentication, session management, and data validation.
+        <br><br>
+        The UI is responsive and designed with HTML and CSS, providing a smooth experience across devices. The backend securely stores user data and transaction history using <strong>MongoDB and PyMongo</strong>. The project demonstrates my ability to handle both frontend and backend seamlessly.
+        <br><br>
+        <strong>Tech Stack:</strong> Python, Flask, MongoDB, HTML, CSS, PyMongo
+        </p>
+        <a href="https://github.com/Zuhaibkhank/Banking_Automation_System" target="_blank">🔗 View GitHub Repo</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:zuhaibkhan1915691@gmail.com">zuhaibkhan1915691@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/zuhaibkhan1915" target="_blank">/in/zuhaibkhan1915</a></p>
+      <p>GitHub: <a href="https://github.com/Zuhaibkhank" target="_blank">/Zuhaibkhank</a></p>
+    </section>
+
+    <footer>
+      <p>© 2025 Zuhaib Khan | Built with ❤️ for real-world impact</p>
+    </footer>
   </div>
 </body>
 </html>
-
