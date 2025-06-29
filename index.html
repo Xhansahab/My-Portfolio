@@ -8,7 +8,8 @@
 </head>
 <body>
   <div class="main-container">
-    <!-- HEADER / HERO SECTION -->
+
+    <!-- HERO SECTION -->
     <header class="hero">
       <img src="assets/zuhaib.jpg" alt="Zuhaib Khan" class="profile-pic">
       <h1>Hi, I'm <span class="highlight">Zuhaib Khan</span></h1>
@@ -16,26 +17,32 @@
       <a href="assets/resume.pdf" download class="btn">📄 Download Resume</a>
     </header>
 
-    <!-- ABOUT ME -->
-    <section class="about">
-      <h2>About Me</h2>
-      <p>I am a passionate and detail-oriented <strong>Python Full Stack Developer</strong> from New Delhi, India. I recently completed my <strong>B.Tech in Computer Science</strong> from <strong>Gurugram University (2021–2025)</strong>. During my college years, I developed a strong foundation in software development, web technologies, and machine learning. I have worked on real-world projects that have helped me understand the software development life cycle end-to-end.
-      <br><br>
-      I have a strong command over technologies such as <strong>Flask, MongoDB, React, HTML, CSS, and JavaScript</strong>. I also have experience in data science tools like <strong>Pandas, NumPy, and scikit-learn</strong>. My strengths include developing intuitive user interfaces, building secure and scalable backends, and writing clean and maintainable code.
-      <br><br>
-      In addition to coding, I possess strong communication skills and a collaborative mindset. I enjoy working in teams, learning new tools, and contributing to open-source. My goal is to create impactful digital solutions that address real-life problems.
-      <br><br>
-      I’m driven by curiosity, continuous improvement, and a deep passion for building applications that make life easier and smarter. Whether it’s automating banking systems or assisting farmers with smart tools, I always aim to make technology accessible and useful.
-      </p>
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+      <div class="about-left">
+        <h2>About Me</h2>
+        <p>I am a passionate and detail-oriented <strong>Python Full Stack Developer</strong> from New Delhi, India.</p>
+        <p>I recently completed my <strong>B.Tech in Computer Science</strong> from <strong>Gurugram University (2021–2025)</strong>.</p>
+        <p>During my college years, I developed a strong foundation in software development, web technologies, and machine learning.</p>
+        <p>I have a strong command over technologies such as <strong>Flask, MongoDB, React, HTML, CSS, and JavaScript</strong>.</p>
+        <p>I also have experience in data science tools like <strong>Pandas, NumPy, and scikit-learn</strong>.</p>
+        <p>I possess strong communication skills and a collaborative mindset, and I enjoy working in teams.</p>
+        <p>My goal is to create impactful digital solutions that address real-life problems.</p>
+        <p>I’m driven by curiosity, continuous improvement, and a deep passion for building applications that make life easier and smarter.</p>
+      </div>
+      <div class="about-right">
+        <img src="assets/zuhaib.jpg" alt="Zuhaib Khan" class="about-photo">
+      </div>
     </section>
 
     <!-- SKILLS -->
     <section class="skills">
       <h2>Skills</h2>
       <div class="skill-tags">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Python</span>
-        <span>Flask</span><span>MongoDB</span><span>Git</span><span>GitHub</span>
-        <span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>VS Code</span>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+        <span>Python</span><span>Flask</span><span>MongoDB</span><span>Git</span>
+        <span>GitHub</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span>
+        <span>VS Code</span>
       </div>
     </section>
 
@@ -45,23 +52,17 @@
 
       <div class="project">
         <h3>🌾 Crop Disease Detection System</h3>
-        <p>This project is a machine learning-powered web application that allows farmers to detect diseases in crops based on parameters like temperature, humidity, soil moisture, and nutrient content (NPK). The system uses a <strong>Random Forest Classifier</strong> trained on real-world agricultural datasets to predict crop health.
-        <br><br>
-        The interface is built using <strong>Flask</strong> and features a user-friendly form for input. The app processes the data, runs predictions, and returns the most likely disease (or "Healthy" if none). It helps farmers take timely decisions, reduce losses, and increase productivity.
-        <br><br>
-        <strong>Tech Stack:</strong> Python, Flask, Pandas, NumPy, scikit-learn, HTML, CSS
-        </p>
+        <p>This machine learning-powered web application helps farmers detect diseases in crops based on parameters like temperature, humidity, soil moisture, and NPK content. The system uses a <strong>Random Forest Classifier</strong> trained on real-world datasets to predict crop health.</p>
+        <p>Built with <strong>Flask</strong>, the app has a clean UI and provides instant feedback to the user for early disease management.</p>
+        <p><strong>Tech Stack:</strong> Python, Flask, Pandas, NumPy, scikit-learn, HTML, CSS</p>
         <a href="https://github.com/Zuhaibkhank/Crop_Disease_Prediction" target="_blank">🔗 View GitHub Repo</a>
       </div>
 
       <div class="project">
         <h3>🏦 Banking Automation System</h3>
-        <p>This is a full-stack web application that simulates basic banking operations. Users can create accounts, log in securely, deposit and withdraw funds, and check their balance. Built using <strong>Flask and MongoDB</strong>, it includes features like authentication, session management, and data validation.
-        <br><br>
-        The UI is responsive and designed with HTML and CSS, providing a smooth experience across devices. The backend securely stores user data and transaction history using <strong>MongoDB and PyMongo</strong>. The project demonstrates my ability to handle both frontend and backend seamlessly.
-        <br><br>
-        <strong>Tech Stack:</strong> Python, Flask, MongoDB, HTML, CSS, PyMongo
-        </p>
+        <p>A full-stack banking platform where users can register, log in, check balances, and perform transactions like deposit and withdrawal. Data is stored securely using <strong>MongoDB</strong> and managed through <strong>Flask</strong> sessions.</p>
+        <p>Fully responsive frontend and user-friendly experience built with modern UI practices.</p>
+        <p><strong>Tech Stack:</strong> Python, Flask, MongoDB, HTML, CSS, PyMongo</p>
         <a href="https://github.com/Zuhaibkhank/Banking_Automation_System" target="_blank">🔗 View GitHub Repo</a>
       </div>
     </section>
@@ -74,9 +75,11 @@
       <p>GitHub: <a href="https://github.com/Zuhaibkhank" target="_blank">/Zuhaibkhank</a></p>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <p>© 2025 Zuhaib Khan | Built with ❤️ for real-world impact</p>
     </footer>
+
   </div>
 </body>
 </html>
