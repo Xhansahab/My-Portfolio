@@ -4,9 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zuhaib Khan | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #0b0f2a, #020409);
+      color: #ccc;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+    .section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .skill-box {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 5px solid #00bcd4;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .skill-box h3 {
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 5px solid #00bcd4;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+    .contact a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,153 +78,165 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <div class="main-container">
+  <!-- === HERO SECTION === -->
+  <section class="hero section" id="home">
+    <div class="hero-left">
+      <h1>Hi,<br>I'm <span class="highlight">Zuhaib Khan</span></h1>
+      <p class="subtitle">Python Full Stack Developer</p>
+    <div class="resume-buttons">
+  <a href="assets/Zuhaib Khan Resume.pdf" download="Zuhaib_Khan_Resume.pdf" class="btn download-btn">
+    <i class="fas fa-download"></i> Download Resume
+  </a>
+</div>
 
-    <!-- === HERO SECTION === -->
-    <section class="hero" id="home">
-      <div class="hero-left">
-        <h1>Hi,<br>I'm <span class="highlight">Zuhaib Khan</span></h1>
-        <p class="subtitle">Python Full Stack Developer</p>
-        <a href="#contact" class="btn">Contact</a>
-      </div>
-      <div class="hero-right">
-        <img src="assets/zuhaib.jpg" alt="Zuhaib Khan" class="profile-pic-large" />
-      </div>
-    </section>
+    </div>
+    <div class="hero-right">
+      <img src="assets/zuhaib.jpg" alt="Zuhaib Khan" class="profile-pic-large" />
+    </div>
+  </section>
 
-    <!-- === ABOUT SECTION === -->
-   <section class="about-section" id="about">
-  <h2>About</h2>
-  <p>Hello! I’m <strong>Zuhaib Khan</strong>, a passionate and detail-oriented <strong>Python Full Stack Developer</strong> based in New Delhi, India.</p>
-  <p>I completed my <strong>Bachelor of Technology (B.Tech)</strong> in <strong>Computer Science</strong> from <strong>Gurugram University</strong> in the year 2025.</p>
-  <p>My core skills include <strong>Python, Flask, MongoDB, React, HTML, CSS, JavaScript</strong>, and data tools like <strong>Pandas, NumPy, scikit-learn</strong>. I specialize in building robust web applications and smart backend systems.</p>
-  <p>I've built multiple real-world projects like a <strong>Crop Disease Detection System</strong> using machine learning, and a <strong>Banking Automation System</strong> with secure login and transaction features.</p>
-  <p>I am a fast learner, problem solver, and always open to learning new technologies. My strengths include clean code, UI/UX understanding, backend logic, and user-focused solutions.</p>
-  <p>My long-term goal is to build impactful tech products that solve real-life problems. I aim to grow as a full-stack expert and contribute to modern, efficient, and scalable software systems.</p>
-  <p>Beyond coding, I enjoy learning about startups, technology trends, and digital product design.</p>
-</section>
-
-
-    <!-- === SKILLS SECTION === -->
-   <section class="skills" id="skills">
-  <h2>Skills</h2>
-
-  <!-- Frontend Skills -->
-  <div class="skill-group">
-    <h3>🖥️ Frontend Development</h3>
-    <p>
-      Proficient in creating responsive, accessible, and visually appealing user interfaces using 
-      <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript</strong>. Skilled in 
-      building component-based UI using <strong>React.js</strong>, managing state, and integrating APIs. 
-      Familiar with layout frameworks like <strong>Bootstrap</strong> and modern CSS techniques including Flexbox and Grid.
-    </p>
-  </div>
-
-  <!-- Backend Skills -->
-  <div class="skill-group">
-    <h3>⚙️ Backend Development</h3>
-    <p>
-      Experienced in writing scalable and secure server-side applications using <strong>Python</strong> and 
-      <strong>Flask</strong>. Proficient in designing RESTful APIs, handling routes, session management, 
-      authentication, and working with database models and CRUD operations.
-    </p>
-  </div>
-
-  <!-- Database & Hosting -->
-  <div class="skill-group">
-    <h3>🗄️ Database & Hosting</h3>
-    <p>
-      Hands-on experience with <strong>MongoDB</strong> for building and querying NoSQL databases. 
-      Capable of integrating backend with database for storing user data, transactions, and logs. 
-      Familiar with local hosting using <strong>Flask</strong> and deployment on platforms like <strong>GitHub Pages</strong> and <strong>Render</strong>.
-    </p>
-  </div>
-
-  <!-- Data Science & ML Tools -->
-  <div class="skill-group">
-    <h3>📊 Data & Machine Learning</h3>
-    <p>
-      Skilled in data manipulation using <strong>Pandas</strong> and <strong>NumPy</strong>, data visualization, and 
-      model building using <strong>scikit-learn</strong>. Worked on projects involving classification, prediction, 
-      and automation using ML algorithms such as Random Forest and Decision Tree.
-    </p>
-  </div>
-
-  <!-- Tools & Version Control -->
-  <div class="skill-group">
-    <h3>🛠️ Tools & Technologies</h3>
-    <p>
-      Familiar with using <strong>Git</strong> and <strong>GitHub</strong> for version control and project collaboration. 
-      Comfortable using <strong>Visual Studio Code</strong> as the primary development environment. 
-      Also experienced with <strong>Postman</strong> for API testing and <strong>Google Colab</strong> for ML experiments.
-    </p>
+  <!-- === ABOUT SECTION === -->
+  <!-- === ABOUT ME SECTION === -->
+<section id="about" class="section" data-aos="fade-up">
+  <h2>About Me</h2>
+  <div class="about-wrapper">
+    <p>Hello! I'm <strong>Zuhaib Khan</strong>, a passionate <strong>Python Full Stack Developer</strong> based in New Delhi, India.</p>
+    <p>I specialize in creating efficient and scalable web applications using technologies like <strong>Python, Flask, MongoDB, HTML, CSS, JavaScript, and React</strong>.</p>
+    <p>I completed my <strong>Bachelor of Technology (B.Tech)</strong> in <strong>Computer Science</strong> from <strong>Gurugram University</strong> in 2025. During this time, I worked on real-world projects involving machine learning, automation systems, and smart web tools.</p>
+    <p>My strengths include backend logic, clean code practices, UI/UX understanding, and fast problem-solving. I’m always curious about tech startups and product development, and I aim to build impactful digital solutions that solve real-life problems.</p>
+    <p>Outside of coding, I enjoy exploring new technologies, reading about startups, and continuously improving myself both personally and professionally.</p>
   </div>
 </section>
 
 
-    <!-- === PROJECTS SECTION === -->
-    <div class="project">
-  <h3>🌾 Crop Disease Detection System</h3>
-  <p><strong>Overview:</strong> A machine learning-based web application that predicts crop diseases based on environmental and soil input data. It provides real-time prediction using a trained Random Forest model.</p>
-  <p><strong>Features:</strong></p>
-  <ul>
-    <li>User inputs: temperature, humidity, moisture, soil nutrients</li>
-    <li>ML prediction result with disease name</li>
-    <li>Flask backend with clean HTML frontend</li>
-  </ul>
-  <p><strong>Technologies Used:</strong> Python, Flask, Pandas, NumPy, scikit-learn, HTML, CSS</p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/Zuhaibkhank/Crop_Disease_Prediction" target="_blank">Zuhaibkhank/Crop_Disease_Prediction</a></p>
-</div>
+  <!-- === SKILLS SECTION === -->
+  <section id="skills" class="section" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>Frontend Development</h3>
+        <p>HTML5, CSS3, JavaScript, React.js, Bootstrap</p>
+      </div>
+      <div class="skill-box">
+        <h3>Backend Development</h3>
+        <p>Python, Flask, REST APIs, Authentication</p>
+      </div>
+      <div class="skill-box">
+        <h3>Database & Hosting</h3>
+        <p>MongoDB, Flask Hosting, GitHub Pages, Render</p>
+      </div>
+      <div class="skill-box">
+        <h3>Machine Learning</h3>
+        <p>Pandas, NumPy, scikit-learn, Data Preprocessing</p>
+      </div>
+      <div class="skill-box">
+        <h3>Tools & Technologies</h3>
+        <p>Git, GitHub, Postman, VS Code, Google Colab</p>
+      </div>
+    </div>
+  </section>
 
-    <div class="project">
-  <h3>🏦 Banking Automation System</h3>
-  <p><strong>Overview:</strong> A secure banking web app that allows users to create accounts, log in, and perform transactions like deposit and withdraw. All data is stored securely using MongoDB.</p>
-  <p><strong>Features:</strong></p>
-  <ul>
-    <li>User account registration and login system</li>
-    <li>Deposit, withdraw, and balance check features</li>
-    <li>MongoDB for data persistence</li>
-  </ul>
-  <p><strong>Technologies Used:</strong> Python, Flask, MongoDB, HTML, CSS</p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/Zuhaibkhank/Banking_Automation_System" target="_blank">Zuhaibkhank/Banking_Automation_System</a></p>
-</div>
+  <!-- === PROJECTS SECTION === -->
+<section id="projects" class="section" data-aos="fade-up">
+  <h2>Projects</h2>
 
-
-    <!-- === CONTACT SECTION === -->
-    <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:zuhaibkhan1915691@gmail.com">zuhaibkhan1915691@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/zuhaibkhan1915" target="_blank">/in/zuhaibkhan1915</a></p>
-      <p>GitHub: <a href="https://github.com/Zuhaibkhank" target="_blank">/Zuhaibkhank</a></p>
-    </section>
-
-    <footer>
-      <p>© 2025 Zuhaib Khan | Built with ❤️</p>
-    </footer>
+  <!-- Crop Disease Detection System -->
+  <div class="project-card">
+    <h3>🌾 Crop Disease Detection System</h3>
+    <p><strong>Overview:</strong> A machine learning-powered web application that predicts crop diseases using environmental and soil data.</p>
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>Accepts user input: temperature, humidity, moisture, and soil nutrients</li>
+      <li>Predicts disease using a trained Random Forest classifier</li>
+      <li>Flask backend and clean HTML/CSS frontend</li>
+      <li>Instant output with disease name and suggestions</li>
+    </ul>
+    <p><strong>Technologies Used:</strong> Python, Flask, Pandas, NumPy, scikit-learn, HTML, CSS</p>
+    <p><strong>GitHub:</strong> 
+      <a href="https://github.com/Zuhaibkhank/Crop_Disease_Prediction" target="_blank">
+        Crop_Disease_Prediction 🔗
+      </a>
+    </p>
   </div>
+
+  <!-- Banking Automation System -->
+  <div class="project-card">
+    <h3>🏦 Banking Automation System</h3>
+    <p><strong>Overview:</strong> A secure full-stack web app simulating banking operations like account creation, login, deposits, and withdrawals.</p>
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>User account creation with name, account number, and initial balance</li>
+      <li>Secure login system with session handling</li>
+      <li>Deposit, withdraw, and balance check features</li>
+      <li>All transactions stored in MongoDB</li>
+    </ul>
+    <p><strong>Technologies Used:</strong> Python, Flask, MongoDB, HTML, CSS, JavaScript</p>
+    <p><strong>GitHub:</strong> 
+      <a href="https://github.com/Zuhaibkhank/Banking_Automation_System" target="_blank">
+        Banking_Automation_System 🔗
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- === EDUCATION SECTION === -->
+<section id="education" class="section" data-aos="fade-up">
+  <h2>Education</h2>
+
+  <!-- B.Tech -->
+  <div class="education-entry">
+    <h3>Bachelor of Technology (B.Tech) in Computer Science</h3>
+    <p><strong>Gurugram University</strong>, Haryana, India</p>
+    <p><strong>Year:</strong> 2021 – 2025</p>
+    <p><strong>CGPA:</strong> 8.4 / 10</p>
+    <p><strong>Relevant Subjects:</strong> Data Structures, Web Development, Machine Learning</p>
+  </div>
+
+  <!-- Class 12th -->
+  <div class="education-entry">
+    <h3>Senior Secondary (Class 12th) - Science Stream</h3>
+    <p><strong>Crescent Convent School</strong>, India</p>
+    <p><strong>Year of Completion:</strong> 2019</p>
+    <p><strong>Board:</strong> CBSE</p>
+  </div>
+
+  <!-- Class 10th -->
+  <div class="education-entry">
+    <h3>Secondary (Class 10th)</h3>
+    <p><strong>Crescent Convent School</strong>, India</p>
+    <p><strong>Year of Completion:</strong> 2017</p>
+    <p><strong>Board:</strong> CBSE</p>
+  </div>
+</section>
+
+
+
+  <!-- === CONTACT SECTION === -->
+  <section class="section contact" id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Phone: +91-9598433669</p>
+    <p>Email: <a href="mailto:zuhaibkhan1915691@gmail.com">zuhaibkhan1915691@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/zuhaibkhan1915" target="_blank">/in/zuhaibkhan1915</a></p>
+    <p>GitHub: <a href="https://github.com/Zuhaibkhank" target="_blank">/Zuhaibkhank</a></p>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer style="text-align:center; padding:30px 20px; color:#888; font-size:0.9rem; border-top:1px solid #333;">
+    <p>© 2025 Zuhaib Khan | Built with ❤️</p>
+  </footer>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav-links li a");
+    AOS.init();
+  </script>
+</body>
+</html>
 
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 100;
-      if (pageYOffset >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
 
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
 
